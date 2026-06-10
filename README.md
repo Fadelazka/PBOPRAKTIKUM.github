@@ -1,5 +1,4 @@
-Penjelasan untuk Panduan Kamu
-Agar kamu paham dan bisa menjelaskan saat asistensi, berikut poin-poin pentingnya:
+Penjelasan praktikum :
 
 OOP & Widget Dasar:
 
@@ -38,3 +37,29 @@ Padding (pady, padx): Memberikan jarak antar elemen agar tidak "berdempetan".
 Warna Modern: Menggunakan kode hex seperti #1877f2 (biru Facebook) dan background soft #f0f2f5.
 
 Relief & Border: Menghilangkan border default (bd=0) dan menggunakan highlightthickness untuk membuat kotak input yang lebih modern (flat design).
+
+
+
+Penjelasan Mandiri :
+
+Struktur Sidebar & Main Content:
+
+Saya menggunakan dua Frame utama di Dashboard: sidebar (kiri) dan main_frame (kanan).
+
+Fungsi show_content() sangat penting. Fungsinya adalah menghapus apapun yang ada di tengah layar (widget.destroy()) dan menggantinya dengan tampilan fitur baru saat tombol diklik. Ini membuat aplikasi terasa dinamis seperti aplikasi web.
+
+Penggunaan ttk.Treeview:
+
+Untuk fitur Stok Gudang, saya menggunakan Treeview. Ini adalah widget standar Tkinter untuk menampilkan data berbentuk tabel/grid agar terlihat rapi.
+
+Logika Transisi:
+
+root.withdraw() digunakan untuk menyembunyikan jendela login saat dashboard terbuka, dan root.deiconify() digunakan untuk memunculkan kembali jendela login jika user menekan tombol "Keluar Sistem".
+
+Tema Warna (Agriculture Theme):
+
+Warna utama adalah #2d5a27 (Deep Green). Ini memberikan kesan sistem resmi pertanian yang profesional dibandingkan hanya menggunakan warna standar abu-abu Tkinter.
+
+Validasi Mandiri:
+
+Input divalidasi menggunakan .strip(). Fungsi ini akan menghapus spasi kosong. Jadi, jika user hanya menekan "spasi" tanpa karakter, sistem akan tetap menganggapnya kosong dan memunculkan peringatan.
